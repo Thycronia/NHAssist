@@ -1,0 +1,165 @@
+Mods:
+{
+    NHAssist:
+    {
+        BossSelectorButton:
+        {
+            CurrentBoss: "Current Boss:"
+            Select: Left click to select a boss
+            Return: Left click to return to option panel
+            Clear: Right click to clear this boss option
+        }
+        NoHitButton:
+        {
+            IsOn: Nohit mode is ON
+            IsOff: Nohit mod is NOT on
+        }
+        QueryButton:
+        {
+            Tip: Click to output a functionality description
+            Description:
+            '''
+            NHAssist is a nohit assist mod, that support both vanilla and calamity mod.
+            It does NOT support multiplayer...yet.
+
+            ----Control Panel:
+            
+            This panel has four ccategories; namely, buff, biome, world and config.
+            -The buff category allows you to add buff to yourself. Note that if you are using "Quality of Life" Mod, its active/inactive infinite buff functionality will prevent the game from adding inactivated buffs.
+            -The biome category allows you to force the game to consider the player as being in certain biomes, even mutually exclusive biomes like the evil and hallow. Thus, adjust them carefully before a nohit.
+            -The world category allows you to set the current world boss progress freely. This is useful in cases like Calamity Mod's Profaned Soul Artifact, whose damage increases with world progress.
+            -The config catefory adds some quality of life changes to make nohitting a little more effective.
+
+            Every option in the buff and the world categories has a stage associated. If you select a nohitting boss with the boss selector button, those options whose stages exceed that of the nohitting boss would become unavailable.
+
+            ----Functionality:
+            -Right click on the life or the mana bar to cycle the player's permanent life/mana boost level.
+            -CalamityMod: Right click on the rage or the adrenaline meter to cycle the player's rage/adrenaline boost level.
+
+            ----Command:
+            
+            -rehook: Sometimes, you may notice that some functionalities cease to work (often the "right click on life / mana bar" functionality).
+            If this happens, try type "/rehook" in the chat. These happens due to mysterious bug in On/IL hooks. Alternatively, you can reload the mods to fix them.
+            '''
+        }
+        PanelUIPlayer:
+        {
+            DeathMessage: "Shitty AI, Shitty Hitbox, and Shitty Mechanism"
+        }
+        Edits:
+        {
+            RipperUIEdit:
+            {
+                LockWarning: Unlock meter positions to adjust boost level
+                RageTip: Right click to cycle rage boost level
+                AdrenalineTip: Right click to change adrenaline boost level
+            }
+            LifeBarEdit:
+            {
+                Tip: Right click to cycle permanent life boost level
+                InvalidHealth: Current life level not supported
+                NoPause: Life edit doesn't work while game is pausing
+            }
+            ManaBarEdit:
+            {
+                Tip: Right click to cycle permanent mana boost level
+                InvalidMana: Current mana level not supported
+                NoPause: Mana edit doesn't work while game is pausing
+            }
+            LevelMeter:
+            {
+                ItemTip:
+                    '''
+                    Right click in inventory to cycle proficiency level
+                    As a result, quick accessory equipping is disabled
+                    '''
+            }
+        }
+        Option:
+        {
+            Base:
+            {
+                NotAvailable: Not Available
+            }
+            Biome:
+            {
+                Terraria:
+                {
+                    Snow: Snow
+                    Desert: Desert
+                    UndergroundDesert: Underground Desert
+                    Jungle: Jungle
+                    Glowshroom: Glowing Mushroom
+                    Dungeon: Dungeon
+                    Corrupt: Corruption
+                    Crimson: Crimson
+                    Hallow: Hallow
+                    Granite: Granite Cave
+                    Marble: Marble Cave
+                    Graveyard: Grave Yard
+                    Meteor: Meteorite
+                }
+                Calamity:
+                {
+                    Sulphur: Sulphur Sea
+                    Sunken: Sunken Sea
+                    Brimstone: Brimstone Crag
+                    SurfaceAstral: Astral Infection
+                    AbyssLayer1: Abyss Layer 1
+                    AbyssLayer4: Abyss Layer 4
+                }
+            }
+            Config:
+            {
+                FastRespawn: "Fast Respawn\nRemove all hostile npcs and projectiles while respawning instantly"
+                NoTomb: "Disable Tombstones\nPlayers no longer drop tombstones on death"
+                Respawn10HP: "Respawn on 10 HP"
+                HideBuff: "Hide Buffs\nDisable buff drawing under hotbar"
+                AutoFire: "Auto Fire\nClicking instead of holding use button to auto-use weapons"
+                BGTeleport: "Full Map Teleort\nRight click on full screen map to teleport"
+                QuickReforge: "Quick Reforge\nReforge without Goblin Tinker"
+                Calamity:
+                {
+                    FillRage: "Fill Rage\nFill your rage upon summoning a boss, once per life"
+                    CalamityDrawing: "Lag-friendly Calamity drawing\nExperimental. Mainly for the author's computer"
+                }
+            }
+            World:
+            {
+                Boss:
+                {
+                    Downed: "Downed "
+                    NotDowned: "Not Downed "
+                }
+                Terraria:
+                {
+                    World_FTW: For The Worthy
+                }
+            }
+        }
+        Configs:
+        {
+            GeneralConfigs:
+            {
+                Name: General Config
+                MoreBuffSlots:
+                {
+                    Label: Extra Buff Slots Count
+                }
+                ScrollSens:
+                {
+                    Label: Scroll Sensitivity
+                    Tip: The sensitivity of control panel scrolling. The larger, the more agile.
+                }
+            }
+        }
+        KeyBind:
+        {
+            ThyPanelKey: Toggle Control Panel
+        }
+        General:
+        {
+            WorldEnterWarning: "NHAssist: Bind a hotkey to toggle the control panel"
+        }
+    }
+}

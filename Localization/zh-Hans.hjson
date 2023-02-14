@@ -1,0 +1,164 @@
+Mods:
+{
+    NHAssist:
+    {
+        BossSelectorButton:
+        {
+            CurrentBoss: "当前Boss:"
+            Select: 左键以选择Boss
+            Return: 左键以返回控制面板
+            Clear: 右键以清除当前Boss
+        }
+        NoHitButton:
+        {
+            IsOn: 无伤已开启
+            IsOff: 无伤未开启
+        }
+        QueryButton:
+        {
+            Tip: 左键以在聊天栏输出功能介绍
+            Description:
+            '''
+            NHAssist 是一个无伤辅助Mod，支持原版和灾厄。暂时不支持多人。
+
+            ----控制面板：
+            
+            控制面板有四类开关：Buff，环境，世界进度，及功能设置
+            -Buff开关用于给玩家加Buff。 注意，如果你在使用“更好的体验”Mod，关闭的无尽Buff会阻止游戏给玩家加同种Buff。
+            -环境开关允许玩家强制设定当前环境，即使是如邪恶与神圣这样的冲突环境。所以在无伤前请仔细检查是否符合无伤要求。
+            -世界进度开关允许玩家设定当前世界的Boss进度。用处包括但不限于：灾厄渎魂圣物的伤害会随世界进度而增加。
+            -功能设置加入了一些让你的无伤没那么痛苦的功能。
+
+            每个Buff和世界进度开关都受时期限制。当在面板上选定了无伤Boss后，超过无伤Boss时期的开关会自动禁用。
+
+            ----拓展功能：
+            -右键点击生命/魔力条以调整永久生命/魔力增幅等级。
+            -灾厄Mod：右键点击怒气/肾上腺素条以调整永久怒气/肾上腺素增幅等级。
+
+            ----命令：
+            
+            -rehook：有时，一些拓展功能会莫名失效（右键血/蓝条的功能甚至会稳定失效（））。
+            这种情况下，在聊天栏输入“/rehook”可能可以修复。这类问题是由于On/IL钩子里的奇妙Bug。另一种解决方案是重新加载Mod。
+            '''
+        }
+        PanelUIPlayer:
+        {
+            DeathMessage: "苟史AI, 苟史碰撞箱, 还有苟史机制"
+        }
+        Edits:
+        {
+            RipperUIEdit:
+            {
+                LockWarning: 在灾厄设置中取消锁定UI位置以调整增幅等级
+                RageTip: 右键以循环调整怒气增幅等级
+                AdrenalineTip: 右键以循环调整肾上腺素增幅等级
+            }
+            LifeBarEdit:
+            {
+                Tip: 右键以循环调整生命上限等级
+                InvalidHealth: 此功能不支持当前生命上限值
+                NoPause: 游戏暂停时无法调整生命上限
+            }
+            ManaBarEdit:
+            {
+                Tip: 右键以循环调整魔力上限等级
+                InvalidMana: 此功能不支持当前魔力上限值
+                NoPause: 游戏暂停时无法调整魔力上限
+            }
+            LevelMeter:
+            {
+                ItemTip:
+                    '''
+                    背包中右键以循环调整熟练度等级
+                    因此, 无法快速装备此饰品
+                    '''
+            }
+        }
+        Option:
+        {
+            Base:
+            {
+                NotAvailable: 不可用
+            }
+            Biome:
+            {
+                Terraria:
+                {
+                    Snow: 冰雪
+                    Desert: 沙漠
+                    UndergroundDesert: 地下沙漠
+                    Jungle: 丛林
+                    Glowshroom: 发光蘑菇
+                    Dungeon: 地牢
+                    Corrupt: 腐化
+                    Crimson: 血腥
+                    Hallow: 神圣
+                    Granite: 花岗岩洞穴
+                    Marble: 大理石洞穴
+                    Graveyard: 墓地
+                    Meteor: 陨石
+                }
+                Calamity:
+                {
+                    Sulphur: 硫磺海
+                    Sunken: 沉沦之海
+                    Brimstone: 硫火之涯
+                    SurfaceAstral: 星辉瘟疫
+                    AbyssLayer1: 深渊第一层
+                    AbyssLayer4: 深渊第四层
+                }
+            }
+            Config:
+            {
+                FastRespawn: "快速复活\n瞬间复活的同时清除敌对弹幕和NPC"
+                NoTomb: "取消墓碑生成\n玩家死亡时不再掉落墓碑"
+                Respawn10HP: "10滴血复活"
+                HideBuff: "隐藏Buff\n禁用快捷栏下方的Buff绘制"
+                AutoFire: "自动攻击\n使用武器时点击一次则视为一直按住左键，再点一次关闭"
+                BGTeleport: "大地图传送\n右键全屏地图以传送到老鼠(bushi)的位置"
+                QuickReforge: "快捷重铸\n无哥布林时强制开启重铸"
+                Calamity:
+                {
+                    FillRage: "自动填充怒气\n召唤Boss时填充怒气条，每条命一次"
+                    CalamityDrawing: "降低灾厄绘制卡顿\n试验性功能，主要为作者自用"
+                }
+            }
+            World:
+            {
+                Boss:
+                {
+                    Downed: "已击败"
+                    NotDowned: "未击败"
+                }
+                Terraria:
+                {
+                    World_FTW: "丧心病狂 FTW"
+                }
+            }
+        }
+        Configs:
+        {
+            GeneralConfigs:
+            {
+                Name: 综合设置
+                MoreBuffSlots:
+                {
+                    Label: 更多Buff栏数量
+                }
+                ScrollSens:
+                {
+                    Label: 控制面板滚动灵敏度
+                    Tip: 鼠标滚轮在控制面板上滚动时的灵敏度。越大越灵活。
+                }
+            }
+        }
+        KeyBind:
+        {
+            ThyPanelKey: 开关控制面板
+        }
+        General:
+        {
+            WorldEnterWarning: "NHAssist：绑定快捷键以开启控制面板"
+        }
+    }
+}
