@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\tModLoader.targets" />
+  <PropertyGroup>
+    <AssemblyName>NHAssist</AssemblyName>
+    <TargetFramework>net6.0</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="tModLoader.CodeAssist" Version="0.1.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="UIs\" />
+    <None Remove="UIs\UIBases\" />
+    <None Remove="UIs\UITextures\" />
+    <None Remove="UIs\UITextures\Bases\" />
+    <None Remove="CalamityMod" />
+    <None Remove="Localization\" />
+    <None Remove="UIs\UITextures\World\" />
+    <None Remove="UIs\UITextures\Biome\" />
+    <None Remove="UIs\UITextures\Biome\Calamity\" />
+    <None Remove="UIs\UITextures\Bases\Calamity\" />
+    <None Remove="Edits\" />
+    <None Remove="Edits\Vanilla\" />
+    <None Remove="Edits\Calamity\" />
+    <None Remove="Configs\" />
+    <None Remove="Command\" />
+    <None Remove="DataStruct\" />
+    <None Remove="UIs\UITextures\Config\" />
+    <None Remove="UIs\ThyPanel\ContentPanels\OptionPanel\Config\ConfigPlayers\" />
+    <None Remove="UIs\UITextures\Config\Calamity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UIs\UITextures\Bases\" />
+    <Folder Include="Localization\" />
+    <Folder Include="UIs\UITextures\World\" />
+    <Folder Include="UIs\UITextures\Biome\" />
+    <Folder Include="UIs\UITextures\Biome\Calamity\" />
+    <Folder Include="UIs\UITextures\Bases\Calamity\" />
+    <Folder Include="Edits\" />
+    <Folder Include="Edits\Vanilla\" />
+    <Folder Include="Edits\Calamity\" />
+    <Folder Include="Configs\" />
+    <Folder Include="Command\" />
+    <Folder Include="DataStruct\" />
+    <Folder Include="UIs\UITextures\Config\" />
+    <Folder Include="UIs\ThyPanel\ContentPanels\OptionPanel\Config\ConfigPlayers\" />
+    <Folder Include="UIs\UITextures\Config\Calamity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CalamityMod">
+      <HintPath>..\ModAssemblies\CalamityMod.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

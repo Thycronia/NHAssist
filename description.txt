@@ -1,0 +1,7 @@
+Thycronia's Nohit Assister is a no hit assist mod. It's main functionalities include: adding buffs, controlling biomes, setting world progresses in a control UI.
+For a more detailed description, click the Query button on the panel ingame.
+This mod also support Calamity Mod.
+
+
+Thycronia's Nohit Assister 是一个无伤辅助Mod。主要功能是一个控制面板，可用于：加Buff，控制环境，设置世界进度。还有一些调整永久增幅的功能。更详细的描述请在游戏中点击控制面板上的“问号”键。
+此Mod支持灾厄Mod。

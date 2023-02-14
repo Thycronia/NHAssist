@@ -1,0 +1,7 @@
+displayName = Thycronia's Nohit Assister
+author = Thycronia
+version = 0.2.3
+sortAfter = CalamityMod
+weakReferences = CalamityMod@2.0.1.2
+includeSource = true
+side = Client
