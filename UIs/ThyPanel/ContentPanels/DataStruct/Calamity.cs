@@ -30,7 +30,7 @@ namespace NHAssist.UIs.ThyPanel.ContentPanels.DataStruct
                 GetField("_downedBrimstoneElemental")),
                 (CalType<Cal.AquaticScourge.AquaticScourgeHead>(), FloatStages.MechBoss, null,
                 GetField("_downedAquaticScourge")),
-                (CalType<Cal.Calamitas.CalamitasClone>(), FloatStages.MechBoss + 0.2f, null,
+                (CalType<Cal.CalClone.CalamitasClone>(), FloatStages.MechBoss + 0.2f, null,
                 GetField("_downedCalamitas")),
                 (CalType<Cal.Leviathan.Leviathan>(), FloatStages.Plantera + 0.2f, null,
                 GetField("_downedLeviathan")),
