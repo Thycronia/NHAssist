@@ -26,11 +26,13 @@
         {
             public static Asset<Texture2D> FillRage;
             public static Asset<Texture2D> CalamityDrawing;
+            public static Asset<Texture2D> AuroCharge;
             [JITWhenModsEnabled("CalamityMod")]
             internal static void Load()
             {
                 FillRage = GetTexture("Config/Calamity/FillRage");
                 CalamityDrawing = GetTexture("Config/Calamity/CalamityDrawing");
+                AuroCharge = GetTexture("Config/Calamity/AutoCharge");
             }
         }
     }
