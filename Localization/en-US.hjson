@@ -122,6 +122,7 @@ Mods:
                 {
                     FillRage: "Fill Rage\nFill your rage upon summoning a boss, once per life"
                     CalamityDrawing: "Lag-friendly Calamity drawing\nExperimental. Mainly for the author's computer"
+                    AutoCharge: "Auto Charge\nAutomatically charge Draedon's Arsenal upon summoning a boss, once per life"
                 }
             }
             World:

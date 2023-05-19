@@ -121,6 +121,7 @@ Mods:
                 {
                     FillRage: "自动填充怒气\n召唤Boss时填充怒气条，每条命一次"
                     CalamityDrawing: "降低灾厄绘制卡顿\n试验性功能，主要为作者自用"
+                    AutoCharge: "自动充能嘉登武器\n召唤Boss时充能背包中的嘉登武器，每条命一次"
                 }
             }
             World:
